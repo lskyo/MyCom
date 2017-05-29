@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'connectform.ui'
 **
-** Created: Sat May 20 10:03:54 2017
+** Created: Mon May 29 18:59:29 2017
 **      by: Qt User Interface Compiler version 4.5.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -32,11 +32,11 @@ public:
     QVBoxLayout *verticalLayout;
     QWidget *widget1;
     QHBoxLayout *horizontalLayout_2;
-    QLabel *label_2;
+    QLabel *label;
     QLineEdit *lineEdit;
     QWidget *widget2;
     QHBoxLayout *horizontalLayout;
-    QLabel *label;
+    QLabel *label_2;
     QLineEdit *lineEdit_2;
     QWidget *widget3;
     QHBoxLayout *horizontalLayout_3;
@@ -59,10 +59,10 @@ public:
         widget1->setObjectName(QString::fromUtf8("widget1"));
         horizontalLayout_2 = new QHBoxLayout(widget1);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        label_2 = new QLabel(widget1);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label = new QLabel(widget1);
+        label->setObjectName(QString::fromUtf8("label"));
 
-        horizontalLayout_2->addWidget(label_2);
+        horizontalLayout_2->addWidget(label);
 
         lineEdit = new QLineEdit(widget1);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
@@ -77,10 +77,10 @@ public:
         widget2->setObjectName(QString::fromUtf8("widget2"));
         horizontalLayout = new QHBoxLayout(widget2);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        label = new QLabel(widget2);
-        label->setObjectName(QString::fromUtf8("label"));
+        label_2 = new QLabel(widget2);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
 
-        horizontalLayout->addWidget(label);
+        horizontalLayout->addWidget(label_2);
 
         lineEdit_2 = new QLineEdit(widget2);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
@@ -124,9 +124,9 @@ public:
     void retranslateUi(QWidget *ConnectForm)
     {
         ConnectForm->setWindowTitle(QApplication::translate("ConnectForm", "Connect", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("ConnectForm", "Port:", 0, QApplication::UnicodeUTF8));
-        lineEdit->setText(QApplication::translate("ConnectForm", "127.0.0.1", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("ConnectForm", "Host:", 0, QApplication::UnicodeUTF8));
+        lineEdit->setText(QApplication::translate("ConnectForm", "127.0.0.1", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("ConnectForm", "Port:", 0, QApplication::UnicodeUTF8));
         lineEdit_2->setText(QApplication::translate("ConnectForm", "1122", 0, QApplication::UnicodeUTF8));
         pushButton->setText(QApplication::translate("ConnectForm", "Connect", 0, QApplication::UnicodeUTF8));
         pushButton_2->setText(QApplication::translate("ConnectForm", "Cancel", 0, QApplication::UnicodeUTF8));
