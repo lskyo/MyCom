@@ -62,8 +62,6 @@
   <valuemap type="QVariantMap" >
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >#ENVTSLOGSSS6812=88248192</value>
-    <value type="QString" >#ENVTSLOGTSLOG6812=88624400</value>
     <value type="QString" >ALLUSERSPROFILE=C:\ProgramData</value>
     <value type="QString" >APPDATA=C:\Users\60991\AppData\Roaming</value>
     <value type="QString" >CATALINA_BASE=D:\Tomcat 8.5</value>
@@ -113,14 +111,14 @@
     <value type="QString" >WINDIR=C:\WINDOWS</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList" >
-    <value type="QString" >F:/MyCom/MyCom.pro</value>
+    <value type="QString" >C:/Users/60991/Desktop/MyCom/MyCom.pro</value>
     <value type="QString" >-spec</value>
     <value type="QString" >win32-g++</value>
     <value type="QString" >-r</value>
    </valuelist>
    <value key="abstractProcess.command" type="QString" >D:/Qt/2009.04/qt/bin/qmake.exe</value>
-   <value key="abstractProcess.enabled" type="bool" >true</value>
-   <value key="abstractProcess.workingDirectory" type="QString" >F:/MyCom</value>
+   <value key="abstractProcess.enabled" type="bool" >false</value>
+   <value key="abstractProcess.workingDirectory" type="QString" >C:/Users/60991/Desktop/MyCom</value>
    <value key="buildConfiguration" type="int" >2</value>
   </valuemap>
  </data>
@@ -129,8 +127,6 @@
   <valuemap type="QVariantMap" >
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >#ENVTSLOGSSS6812=88248192</value>
-    <value type="QString" >#ENVTSLOGTSLOG6812=88624400</value>
     <value type="QString" >ALLUSERSPROFILE=C:\ProgramData</value>
     <value type="QString" >APPDATA=C:\Users\60991\AppData\Roaming</value>
     <value type="QString" >CATALINA_BASE=D:\Tomcat 8.5</value>
@@ -184,7 +180,7 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString" >D:/Qt/2009.04/mingw/bin/mingw32-make.exe</value>
    <value key="abstractProcess.enabled" type="bool" >true</value>
-   <value key="abstractProcess.workingDirectory" type="QString" >F:/MyCom</value>
+   <value key="abstractProcess.workingDirectory" type="QString" >C:/Users/60991/Desktop/MyCom</value>
   </valuemap>
  </data>
  <data>

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created: Mon May 22 18:09:41 2017
+** Created: Mon May 29 12:00:05 2017
 **      by: The Qt Meta Object Compiler version 61 (Qt 4.5.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -46,11 +46,11 @@ static const uint qt_meta_data_MainWindow[] = {
      444,   11,   11,   11, 0x08,
      470,   11,   11,   11, 0x08,
      482,   11,   11,   11, 0x08,
-     508,   11,   11,   11, 0x08,
-     522,   11,   11,   11, 0x08,
-     542,   11,   11,   11, 0x08,
-     558,   11,   11,   11, 0x08,
-     601,   11,   11,   11, 0x08,
+     503,   11,   11,   11, 0x08,
+     517,   11,   11,   11, 0x08,
+     537,   11,   11,   11, 0x08,
+     553,   11,   11,   11, 0x08,
+     596,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -71,7 +71,7 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "on_comboBox_2_currentIndexChanged(int)\0"
     "on_pushButton_5_clicked()\0"
     "on_pushButton_2_clicked()\0readMyCom()\0"
-    "readPendingDatagrams(int)\0readMessage()\0"
+    "readEmitMessage(int)\0readMessage()\0"
     "readClientMessage()\0getConnection()\0"
     "displayError(QAbstractSocket::SocketError)\0"
     "displayError2(QAbstractSocket::SocketError)\0"
@@ -118,7 +118,7 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 13: on_pushButton_5_clicked(); break;
         case 14: on_pushButton_2_clicked(); break;
         case 15: readMyCom(); break;
-        case 16: readPendingDatagrams((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 16: readEmitMessage((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 17: readMessage(); break;
         case 18: readClientMessage(); break;
         case 19: getConnection(); break;

@@ -19,9 +19,9 @@ MainWindow::MainWindow(QWidget *parent)
     cf = new ConnectForm();
 
     connect(cf, SIGNAL(sendConnectReady(int)),
-            this, SLOT(readPendingDatagrams(int)));
+            this, SLOT(readEmitMessage(int)));
     connect(lf, SIGNAL(sendListenReady(int)),
-            this, SLOT(readPendingDatagrams(int)));
+            this, SLOT(readEmitMessage(int)));
 
     tcpSocket = new QTcpSocket(this);
     connect(tcpSocket,SIGNAL(readyRead()),
@@ -282,20 +282,19 @@ void MainWindow::on_pushButton_10_clicked()
     lf->show();
 }
 
-void MainWindow::readPendingDatagrams(int value)
+void MainWindow::readEmitMessage(int value)
 {
-    qDebug() << "This is readPendingDatagrams...";
+    qDebug() << "This is readEmitMessage...";
     qDebug() << "value:" << value ;
     qDebug() << "address:" << address.toString() ;
     qDebug() << "port:" << port ;
 
     if(value == 1){
         qDebug() << "connecting...";
-        if(isOpen)role = 0;
-        else role = 1;
+        role = 1;
         isConnectioning = true;
         tcpSocket->abort();
-        blockSize = 0;
+        //blockSize = 0;
         tcpSocket->connectToHost(address, port);
         qDebug() << "tcpSocket->localAddress().toIPv4Address():" << tcpSocket->localAddress().toIPv4Address();
         qDebug() << "tcpSocket->localPort():" << tcpSocket->localPort();
@@ -309,9 +308,8 @@ void MainWindow::readPendingDatagrams(int value)
         qDebug() << "listening...";
         ui->label_8->setText("listening...");
         ui->widget_3->show();
-        if(isOpen)role = 0;
-        else role = 1;
-        if(!tcpServer->listen(QHostAddress::LocalHost,port)){
+        role = 0;
+        if(!tcpServer->listen(address,port)){
             qDebug() << tcpServer->errorString();
         }
         qDebug() << "tcpServer->serverAddress().toString()" << tcpServer->serverAddress().toString();
